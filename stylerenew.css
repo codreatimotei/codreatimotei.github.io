@@ -1,0 +1,517 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Rubik', 'Aleo', serif;
+  font-family: 'Varela', 'Ramabhadra' sans-serif;
+  background-color: #f2f3f3;
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+/* Editare Continut Pagina */
+.container {
+  margin-top: 10px;
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Editare Meniu + Logo */
+.hero-image {
+  background: url("img/codingiscool.jpg");
+  width: 100%;
+  height: 40vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  background: #0b525e;
+}
+
+.logo {
+  position: absolute;
+  padding-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+nav img {
+  width: 40%;
+  margin-top: -45px;
+  border-radius: 90%;
+}
+
+ul a {
+  text-decoration: none;
+  color: rgb(167,205,204,250);
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+.menu li {
+  font-size: 30px;
+  padding: 10px;
+}
+
+@media (max-width: 730px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .menu li {
+    font-size: 18px;
+  }
+
+  nav img {
+    width: 30%;
+  }
+
+  .logo {
+    margin-top: 15px;
+    max-width: 300px;
+  }
+}
+
+
+/* Editare Sectiune Despre Mine */
+
+.despre-mine {
+  margin-top: 0px;
+  background: #d6e4e4;
+}
+
+
+.despre-mine img {
+  max-width: 400px;
+  float: left;
+  padding: 10px;
+  margin-bottom: -15px;
+}
+
+.titlu-about {
+  display: inline-block;
+  border: 2px solid #7ea2a6;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 42px;
+  border-radius: 15px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+  font-weight: bold;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background: #7ea2a6;
+}
+
+.text-sectiune-despre {
+  font-size: 30px;
+  text-align: justify;
+  padding: 15px;
+}
+
+@media (max-width: 730px) {
+
+  .despre-mine img {
+    width: 50%;
+  }
+  .titlu-about {
+    font-size: 35px;
+  }
+}
+
+/* Serviciile mele */
+ 
+.my-services {
+  border: 2px solid #7ea2a6;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 42px;
+  border-radius: 15px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+  font-weight: bold;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background: #7ea2a6;
+}
+
+.serviciile-mele {
+  font-size: 40px;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  font-family: Aleo;
+  font-size: 30px;
+  padding: 10px;
+  text-align: left;
+  display: flex;
+}
+
+.titlu-col {
+  font-family: Ramabhadra;
+  font-size: 35px;
+}
+
+.col-text {
+  margin-left: 25px;
+}
+
+.col img {
+  margin-top: 10px;
+  width: 120%;
+  padding: 0;
+}
+
+.col-1 {
+  background: #a4ba99;
+}
+
+.col-2 {
+  background: #5d9eaa;
+}
+
+.col-3 {
+  background: #b0d4d2;
+}
+
+@media (max-width: 730px) {
+  .my-services {
+    font-size: 30px;
+  }
+    .serviciile-mele {
+       flex-direction: column;
+    }
+  
+}
+
+@media (max-width: 1200px){
+  .serviciile-mele {
+    flex-direction: column;
+ }
+ .col-text {
+   margin-left: 50px;
+   text-align: justify;
+ }
+}
+
+/* Portfolio */
+
+.zona-portfolio {
+  border: 2px solid #7ea2a6;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: -15px;
+  font-size: 42px;
+  border-radius: 15px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+  font-weight: bold;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background: #7ea2a6;
+}
+
+/* Add padding BETWEEN each column*/
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .content img {
+    margin-top: -10px;
+  }
+  .photo-text {
+    margin-bottom: -10px;
+  }
+}
+
+.content img {
+  height: 400px;
+}
+
+.photo-text {
+  font-family: Aleo;
+  border: 1px solid;
+  margin-top: 400px;
+  font-size: 20px;
+  text-align: justify;
+  padding: 0 10px;
+}
+
+.projects {
+  font-family: Ramabhadra;
+  font-size: 26px;
+}
+
+/* Contact zone */
+.titlu-contact {
+  border: 2px solid #7ea2a6;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: -15px;
+  font-size: 42px;
+  border-radius: 15px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+  font-weight: bold;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background: #7ea2a6;
+}
+
+.titlu-de-contact {
+   text-align: center;
+
+}
+
+input {
+    font-family: Tahoma, sans-serif; 
+    font-size: 100%;
+}
+
+input[type="email"],
+input[type="text"]{
+  width: 40%;
+  display: block;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  height: 30px;
+  margin-bottom: 15px;
+  border: 1px solid #cdcdcd;
+  outline: none;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus {
+  border: 2px solid #869960;
+  box-shadow: inset 0px 0px 0px rgba(0, 0, 0, .13);
+}
+
+textarea:focus {
+  border: 2px solid #869960;
+  box-shadow: inset 0px 0px 0px rgba(0, 0, 0, .13);
+}
+
+textarea {
+width: 100%;
+  display: block;
+  padding: 0 10px;
+  height: 70px;
+  margin-bottom: 15px;
+  border: 1px solid #cdcdcd;
+  outline: none;
+  box-sizing: border-box;
+}
+
+form {
+  background-color: #ececec;
+  padding: 20px 40px;
+  width: 40%;
+  margin: auto;  
+  border-radius: 5%;
+}
+
+.hidden-label {
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+input[type="submit"] {
+width: 100%;
+  display: block;
+  box-sizing: border-box;
+  background-color: #8580ab;
+  color: #fff;
+  padding: 10px 0;
+  border: 1px solid #8580ab;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  border: 1px solid #a09bc7;
+  background-color: #a09bc7;
+}
+
+.contact-form {
+  margin-top: 40px;
+}
+@media (max-width: 1300px) {
+  form {
+     width: 70%;
+  }
+} 
+@media (max-width: 730px) {
+  form {
+    width: 90%;
+  }
+}
+
+
+
+/* Footer area */
+
+.footer-area {
+  display: flex;
+justify-content: center;
+  margin: 20px 0;
+  border: 2px solid #7ea2a6;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 15px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+  font-weight: bold;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background: #0b525e;
+}
+
+/*  Meniul site-ului */
+
+.footer-menu {
+  text-align: center;
+  margin: 0 10%;
+  width: 20%;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.footer-menu ul {
+  list-style: none;
+  font-size: 25px;
+}
+
+.footer-menu li {
+  margin: 10px 0;
+}
+
+/* Logo mijloc */
+
+.footer-logo img {
+  margin-bottom: 10px;
+  width: 50%;
+  height: auto;
+  border-radius: 50%
+}
+
+.footer-logo {
+  text-align: center;
+  width: 500px;
+}
+
+/* Date contact */
+
+.footer-contact{
+  margin-top: 20px;
+  margin-left: -90px;
+}
+.icons-social {
+  margin-left: 150px;
+}
+.footer-contact img{
+  width: 70px;
+}
+
+.footer-contact p {
+ font-size: 25px;
+}
+
+
+.sub-footer {
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .footer-menu {
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+
+  .footer-menu li{
+    font-size: 20px;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+.footer-contact {
+  margin-left: 15px;
+}
+
+.icons-social {
+  margin-left: 70px;
+}
+  .footer-contact p{
+    font-size: 20px;
+  }
+  .footer-area {
+    flex-wrap: wrap;
+  }
+
+  .footer-menu {
+    order: 2;
+  }
+
+  .footer-logo {   
+    display:flex;
+    justify-content: center;
+    order: 3;
+  }
+  .footer-logo {
+    margin-top: 20px;  
+  }
+}
